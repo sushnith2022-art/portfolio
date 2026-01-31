@@ -1,0 +1,229 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "healthcare_data_quality_suite",
+  "meta": {
+    "author": "Sushnith Vaidya",
+    "created_at": "2024-01-15T00:00:00.000Z",
+    "description": "Comprehensive data quality expectations for healthcare datasets with HIPAA compliance checks"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "min_value": 1000,
+        "max_value": 10000000
+      },
+      "meta": {
+        "category": "volume",
+        "description": "Ensure table has reasonable row count"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "patient_id"
+      },
+      "meta": {
+        "category": "schema",
+        "description": "Patient ID column must exist"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "patient_id"
+      },
+      "meta": {
+        "category": "completeness",
+        "description": "Patient ID cannot be null - critical field"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "patient_id"
+      },
+      "meta": {
+        "category": "uniqueness",
+        "description": "Patient ID must be unique"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "patient_id",
+        "regex": "^P[0-9]{8}$"
+      },
+      "meta": {
+        "category": "format",
+        "description": "Patient ID must follow format P########"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "diagnosis_code"
+      },
+      "meta": {
+        "category": "schema",
+        "description": "Diagnosis code column must exist"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "diagnosis_code",
+        "regex": "^[A-Z][0-9]{2}(\\.[0-9]{1,2})?$",
+        "mostly": 0.95
+      },
+      "meta": {
+        "category": "validity",
+        "description": "Diagnosis code should follow ICD-10 format (95% threshold)"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "claim_amount",
+        "min_value": 0,
+        "max_value": 1000000
+      },
+      "meta": {
+        "category": "range",
+        "description": "Claim amount should be between 0 and 1M"
+      }
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "claim_amount",
+        "min_value": 100,
+        "max_value": 50000
+      },
+      "meta": {
+        "category": "statistical",
+        "description": "Average claim amount should be reasonable"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "visit_date"
+      },
+      "meta": {
+        "category": "schema",
+        "description": "Visit date column must exist"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "visit_date",
+        "min_value": "2020-01-01",
+        "max_value": "2025-12-31"
+      },
+      "meta": {
+        "category": "timeliness",
+        "description": "Visit date should be within valid range"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "visit_date",
+        "mostly": 0.99
+      },
+      "meta": {
+        "category": "completeness",
+        "description": "Visit date should be populated (99% threshold)"
+      }
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "provider_id"
+      },
+      "meta": {
+        "category": "schema",
+        "description": "Provider ID column must exist"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "claim_status",
+        "value_set": ["PENDING", "APPROVED", "DENIED", "PROCESSING"]
+      },
+      "meta": {
+        "category": "validity",
+        "description": "Claim status should be valid value"
+      }
+    },
+    {
+      "expectation_type": "expect_column_pair_values_to_be_equal",
+      "kwargs": {
+        "column_A": "paid_amount",
+        "column_B": "claim_amount",
+        "or_equal": true,
+        "ignore_row_if": "either_value_is_missing"
+      },
+      "meta": {
+        "category": "consistency",
+        "description": "Paid amount should not exceed claim amount"
+      }
+    },
+    {
+      "expectation_type": "expect_multicolumn_sum_to_equal",
+      "kwargs": {
+        "column_list": ["copay_amount", "insurance_paid", "patient_paid"],
+        "sum_total": 1,
+        "precision": 0.01
+      },
+      "meta": {
+        "category": "consistency",
+        "description": "Payment breakdown should sum to 100%"
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "patient_id",
+          "claim_id",
+          "diagnosis_code",
+          "claim_amount",
+          "visit_date",
+          "provider_id",
+          "claim_status"
+        ],
+        "exact_match": false
+      },
+      "meta": {
+        "category": "schema",
+        "description": "Table should contain all expected columns"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "kwargs": {
+        "column": "claim_amount",
+        "type_": "float"
+      },
+      "meta": {
+        "category": "type",
+        "description": "Claim amount should be numeric"
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_increasing",
+      "kwargs": {
+        "column": "processed_at",
+        "parse_strings_as_datetimes": true
+      },
+      "meta": {
+        "category": "timeliness",
+        "description": "Processing timestamp should be increasing"
+      }
+    }
+  ]
+}
