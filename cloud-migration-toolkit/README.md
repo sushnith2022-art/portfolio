@@ -19,7 +19,7 @@ including schema conversion, data validation, and performance optimization.
 - Apache Airflow
 
 ## Key Features
-✅ Automated schema conversion from Teradata to BigQuery  
+✅ Automated schema conversions from Teradata to BigQuery  
 ✅ Incremental data migration with CDC  
 ✅ Data validation and reconciliation  
 ✅ Query performance optimization  
