@@ -12,12 +12,23 @@ including schema conversion, data validation, and performance optimization.
 - **Validation:** Automated data quality checks
 
 ```mermaid
-graph LR
-    A[Teradata DW] -->|Extract| B[Python Pipeline]
-    B -->|Transform| C[dbt]
-    C -->|Load| D[Google BigQuery]
-    D -->|Validate| E[Data Quality Checks]
-    F[Apache Airflow] -->|Orchestrate| B
+flowchart TD
+    A[🗄️ Teradata Data Warehouse] -->|Extract Data| B[🐍 Python Pipeline]
+    B -->|Orchestrated by| C[⚡ Apache Airflow]
+    B -->|Transform & Model| D[🔧 dbt]
+    D -->|Load Partitioned Data| E[☁️ Google BigQuery]
+    E -->|Validate| F[✅ Data Quality Checks]
+    F -->|Pass| G[✨ Production Ready]
+    F -->|Fail| H[🚨 Alert & Rollback]
+
+    style A fill:#f4a261,stroke:#e76f51,color:#000
+    style B fill:#457b9d,stroke:#1d3557,color:#fff
+    style C fill:#e63946,stroke:#c1121f,color:#fff
+    style D fill:#2a9d8f,stroke:#264653,color:#fff
+    style E fill:#4895ef,stroke:#4361ee,color:#fff
+    style F fill:#7209b7,stroke:#560bad,color:#fff
+    style G fill:#06d6a0,stroke:#059669,color:#000
+    style H fill:#ef233c,stroke:#d90429,color:#fff
 ```
 
 ## Technologies Used
