@@ -11,6 +11,15 @@ including schema conversion, data validation, and performance optimization.
 - **Transformation:** dbt (data build tool)
 - **Validation:** Automated data quality checks
 
+```mermaid
+graph LR
+    A[Teradata DW] -->|Extract| B[Python Pipeline]
+    B -->|Transform| C[dbt]
+    C -->|Load| D[Google BigQuery]
+    D -->|Validate| E[Data Quality Checks]
+    F[Apache Airflow] -->|Orchestrate| B
+```
+
 ## Technologies Used
 - Python, SQL
 - Google BigQuery
