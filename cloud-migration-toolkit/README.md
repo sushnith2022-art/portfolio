@@ -5,12 +5,6 @@ Automated migration framework for moving data warehouses from Teradata to Google
 including schema conversion, data validation, and performance optimization.
 
 ## Architecture
-- **Source:** Teradata Data Warehouse
-- **Target:** Google BigQuery
-- **ETL:** Python-based migration pipelines
-- **Transformation:** dbt (data build tool)
-- **Validation:** Automated data quality checks
-
 ```mermaid
 flowchart TD
     A[🗄️ Teradata Data Warehouse] -->|Extract Data| B[🐍 Python Pipeline]
@@ -30,7 +24,11 @@ flowchart TD
     style G fill:#06d6a0,stroke:#059669,color:#000
     style H fill:#ef233c,stroke:#d90429,color:#fff
 ```
-
+- **Source:** Teradata Data Warehouse
+- **Target:** Google BigQuery
+- **ETL:** Python-based migration pipelines
+- **Transformation:** dbt (data build tool)
+- **Validation:** Automated data quality checks
 ## Technologies Used
 - Python, SQL
 - Google BigQuery
@@ -53,7 +51,7 @@ flowchart TD
 5. **Validation** - Reconcile row counts and sample data
 
 ## Project Status
-🚧 This project demonstrates real-world migration patterns 
+✅ This project demonstrates real-world migration patterns 
 applied during Teradata to BigQuery migrations at enterprise scale.
 
 ---
