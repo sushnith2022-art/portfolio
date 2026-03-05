@@ -33,8 +33,8 @@ including schema conversion, data validation, and performance optimization.
 5. **Validation** - Reconcile row counts and sample data
 
 ## Project Status
-🚧 This project showcases migration patterns from my experience at CVS Health. 
-Code samples are sanitized for confidentiality.
+🚧 This project demonstrates real-world migration patterns 
+applied during Teradata to BigQuery migrations at enterprise scale.
 
 ---
 *Part of [Sushnith Vaidya's Data Engineering Portfolio](https://github.com/sushnith2022-art/portfolio)*
