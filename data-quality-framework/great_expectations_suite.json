@@ -120,7 +120,7 @@
       "kwargs": {
         "column": "visit_date",
         "min_value": "2020-01-01",
-        "max_value": "2025-12-31"
+        "max_value": "2026-12-31"
       },
       "meta": {
         "category": "timeliness",
