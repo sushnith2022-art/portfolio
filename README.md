@@ -5,25 +5,71 @@
 
 ## 👋 About Me
 
-Data Engineer with **5+ years of experience** designing and implementing scalable ETL pipelines,
-cloud-based data architectures, and distributed systems. Currently at **CVS Health**, architecting
-hybrid-cloud solutions for healthcare and financial data.
+Data Engineer with **5 years of experience** designing, optimizing, and maintaining scalable 
+data solutions. Proficient in building and automating ETL pipelines with Azure Data Factory, 
+Azure Synapse Analytics, and Azure Data Lake. Skilled in data modeling, real-time data processing, 
+and big data analytics using Apache Spark and Azure Databricks.
 
-📍 USA | 📧 sushnith2022@gmail.com | 📱 (567) 294-3504
+📍 Findlay, OH, USA | 📧 sushnith2022@gmail.com | 📱 (567) 294-3504
+
+---
+
+## 🎓 Education
+
+**Master of Science in Business Analytics**
+The University of Findlay, Findlay, OH, USA
+Aug 2022 - Mar 2024
+
+**Bachelor of Computers**
+Osmania University, Hyderabad, India
+Jul 2018 - Dec 2021
 
 ---
 
 ## 🛠️ Technical Skills
 
-**Programming & Scripting:** Python, PySpark, SQL, R, Bash, Git, Docker, REST APIs, FastAPI
+**Programming Languages:** Python, Scala, R, SQL, Java
 
-**Big Data & Cloud:** Apache Spark, Airflow, Kafka, AWS (Glue, Redshift, S3), Azure, GCP (BigQuery, Dataflow), Snowflake
+**ETL Tools:** Databricks, Snowflake, SSIS, SSAS, Azure Data Factory, AWS Glue, GCP Dataflow
 
-**Data Architecture:** ETL/ELT, Data Warehousing, Data Lakehouse, Dimensional Modeling, CDC, Delta Lake
+**Big Data Technologies:** Apache Spark, Hadoop, MapReduce, HDFS, Hive, Kafka, Airflow
 
-**Data Governance:** Great Expectations, Monte Carlo, OpenLineage, Data Quality, HIPAA Compliance
+**Data Visualization:** Qlik Sense, Qlik View, Power BI, Tableau, Excel
 
-**Machine Learning & AI:** Hugging Face, MLflow, Feature Engineering, MLOps, Claude Code, MCP Servers
+**Databases:** MySQL, PostgreSQL, MongoDB, MS SQL Server
+
+**Cloud Platforms:** Azure (Synapse Analytics, Data Lake), AWS (S3, EC2, Lambda, EMR, SageMaker), GCP (BigQuery, Dataflow)
+
+**AI Tools:** Claude Code, MCP Servers, Playwright Automation
+
+**Tools:** Git, Jira, Confluence, Jupyter Notebook
+
+---
+
+## 💼 Professional Experience
+
+### Data Engineer @ CVS Health
+**Remote, USA | May 2024 - Present**
+- Develop, test, and deploy Alteryx workflows automating ETL from Oracle and MS SQL Server, processing ~150GB/day and reducing manual effort by ~40%
+- Build and maintain SSIS packages for scheduled and incremental data loads into enterprise data warehouses, improving data availability by ~25%
+- Design Tableau dashboards and Power BI reports for operational and executive decision-making
+- Write and optimize complex SQL queries, stored procedures, and views, reducing query execution time by ~25%
+- Troubleshoot Alteryx workflows, SSIS jobs, and SQL performance issues, improving pipeline reliability by ~30%
+
+### Data Analyst @ University of Findlay (UF TV)
+**Findlay, OH, USA | Sep 2022 - Feb 2024**
+- Analyzed student engagement and audience data using Excel, SQL, and statistical methods, improving content reach by ~20%
+- Built interactive Tableau and Power BI dashboards tracking weekly viewership and broadcast KPIs, reducing manual reporting by ~30%
+- Developed sports analytics dashboards for player and team performance supporting coaching decisions
+
+### Data Engineer @ Wipro IT Corporation
+**Hyderabad, India | Aug 2020 - Aug 2022**
+- Built batch and incremental ETL/ELT pipelines using Azure Data Factory, Python, and SQL processing ~250-300GB/day
+- Developed Spark-based transformation jobs in Databricks improving processing efficiency by ~25%
+- Implemented automated data validation rules reducing data quality incidents by ~30%
+- Designed dimensional models and data marts in Snowflake and Azure SQL for enterprise reporting
+- Applied HIPAA and GxP compliance controls including RBAC, data masking, and encryption
+- Orchestrated workflows using Azure Data Factory and Databricks Jobs via Azure DevOps
 
 ---
 
@@ -40,7 +86,7 @@ hybrid-cloud solutions for healthcare and financial data.
 - [View Project](https://github.com/sushnith2022-art/portfolio/tree/main/cloud-migration-toolkit)
 
 ### 3. 🌊 Real-time Data Streaming
-- **Tech:** Kafka, Spark Streaming, Debezium, Apache Druid
+- **Tech:** Kafka, Spark Streaming, Debezium, Apache Druid, Airflow
 - **Description:** Real-time data ingestion pipeline with CDC implementation and sub-second latency
 - [View Project](https://github.com/sushnith2022-art/portfolio/tree/main/realtime-streaming)
 
@@ -56,25 +102,12 @@ hybrid-cloud solutions for healthcare and financial data.
 
 ---
 
-## 💼 Professional Experience
-
-**Data Engineer @ CVS Health** (May 2024 - Present)
-- Architected hybrid-cloud data pipelines (Azure + GCP)
-- Led Teradata to BigQuery migration
-- Implemented data governance frameworks with HIPAA compliance
-
-**Data Analytics Engineer @ Wipro** (Aug 2020 - Aug 2022)
-- Built ETL pipelines using AWS Glue, PySpark
-- Optimized data models in Redshift
-
----
-
 ## 📜 Certifications
 
 - 🤖 **Claude Code in Action** — Anthropic (March 2026)
-- 📊 Data Analyst Certification — University of Findlay
-- 📈 Accenture North America — Data Analytics and Visualization
-- 💼 Career Essentials in Business Analysis — Microsoft & LinkedIn
+- 📊 **Data Analyst Certification** — University of Findlay
+- 📈 **Data Analytics and Visualization** — Accenture North America
+- 💼 **Career Essentials in Business Analysis** — Microsoft & LinkedIn
 
 ---
 
