@@ -6,7 +6,7 @@
 
 ## 👋 About Me
 
-Data Engineer with **5 years of experience** designing, optimizing, and maintaining scalable 
+Data Engineer with **5 + years of experience** designing, optimizing, and maintaining scalable 
 data solutions. Proficient in building and automating ETL pipelines with Azure Data Factory, 
 Azure Synapse Analytics, and Azure Data Lake. Skilled in data modeling, real-time data processing, 
 and big data analytics using Apache Spark and Azure Databricks.
